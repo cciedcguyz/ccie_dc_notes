@@ -9,6 +9,7 @@ def binsearch(lst,item):
 
     while start <= end:
         mid = (start + end) / 2
+        print 'start is %s, end is %d and mid is %d' % (start,end,mid)
         print 'item in lst[mid] is %d' % lst[mid]
         if item == lst[mid]:
             print 'Your Number %d is present in the list in this index %d' % (item,mid)
