@@ -22,9 +22,13 @@ def merge_sorted(lst1,lst2):
     j = 0
     while i <= big_len:
         if j == small_len:
+            #When the Smaller list is iterated completely 
+            #Then you are left only with the big list which
+            #is already sorted
             new_list.extend(big_l[i:])
             break
         elif i == big_len:
+            #This is needed when both lists are of Equal Length
             new_list.extend(small_l[j:])
             break
 
